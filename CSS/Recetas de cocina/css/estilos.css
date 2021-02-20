@@ -1,0 +1,61 @@
+body{
+	margin: 20px;
+	font-family: Verdana;
+}
+
+h1.resaltado{
+	background-color: gold;
+	color: black;
+}
+
+#menu-principal{
+	padding: 20px 0px;
+}
+
+footer{
+	border-top: solid 1px black;
+	padding-top: 50px;
+	text-align: center;
+}
+
+h1.titulo{
+	background-color: gray;
+	text-align: center;
+	padding: 10px;
+}
+
+img[src$=svg] /** inicio de busqueda */
+img[src^=svg] /** final de busqueda */
+img[src|=svg] /**  busqueda en todo el documento */
+[title*='description'] /** todos los title con descripcion */
+a[href^='#']{
+	color: red;
+}
+img[src$='.svg']{
+	border-radius: 50px;
+}
+img[src$='jpg'], img[src$='png']{
+	border: 1px solid black;
+	border border-radius: 5px;
+}
+*{  /** aplica a todo el documento el 1% del viewport de acho y alto */
+	margin: 1vh 1vw;
+}
+
+h1 + h2 { /** h2 dentro de h1 */
+	text-decoration: underline;
+}
+
+h1~p{   /** todos lo p dentro de h1 */
+	text-align: justify;
+}
+
+article> h2 {
+	text-decoration-color: coral;
+}
+ul li {
+	list-style: linear-gradient();
+	list-style-image: repeating-radial-gradient();
+	list-style: square;
+	scroll-behavior: smooth;
+}
